@@ -1,0 +1,9 @@
+cypress/fixtures
+cypress/downloads
+cypress/screenshots
+cypress/Standard_User_Report
+package-lock.json
+node_modules
+cypress/Locked_out_User_Report
+cypress/Problem_User_Report
+cypress/Performance_Glitch_User_Report

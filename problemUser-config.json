@@ -1,0 +1,31 @@
+{
+  "LOGIN_URL": "https://www.saucedemo.com/",
+  "USERNAME_2": "problem_user",
+  "PASSWORD": "secret_sauce",
+  "INVALID_USERNAME": "arghajit_singha",
+  "INVALID_PASSWORD": "password_123",
+  "INVENTORY_URL": "https://www.saucedemo.com/inventory.html",
+  "CHECKOUT_COMPLETE_URL": "https://www.saucedemo.com/checkout-complete.html",
+  "CHECKOUT_INFO_URL": "https://www.saucedemo.com/checkout-step-one.html",
+  "FIRSTNAME": "Arghajit",
+  "LASTNAME": "Singha",
+  "POSTAL_CODE": "713347",
+  "CHECKOUT_OVERVIEW_URL": "https://www.saucedemo.com/checkout-step-two.html",
+  "video": false,
+  "chromeWebSecurity": false,
+  "reporter": "cypress-mochawesome-reporter",
+  "reporterOptions": {
+    "reportDir": "cypress/Problem_User_Report",
+    "charts": true,
+    "reportPageTitle": "Problem_User_Report"
+  },
+  "viewportHeight": 1080,
+  "viewportWidth": 1920,
+  "pageLoadTimeout": 60000,
+  "requestTimeout": 30000,
+  "defaultCommandTimeout": 50000,
+  "testFiles": [
+    "problem_user_testcases/login.spec.js",
+    "problem_user_testcases/addProductsToCart.spec.js"
+  ]
+}
