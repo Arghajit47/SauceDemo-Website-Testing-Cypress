@@ -1,0 +1,17 @@
+name: main-merge
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    name: Build, Run Automation Testcases
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0 # Shallow clones should be disabled for a better relevancy of analysis
+      - name: Install dependencies
+        run: npm install
+      - name: Run Automation Testcases
+        run: npx cypress run --config-file all-config.json --browser chrome
